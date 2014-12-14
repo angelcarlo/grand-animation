@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Help</title>
+	 
+	   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  	<style>
+		#map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
+	</style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+  
+ <script  >
+ 
+window.onload = popup;
+
+function popup(){
+						$.mobile.loading('show');
+						$("#vmg").slideDown(1000);
+								
+	
+					
+					
+						$("#vmg").fadeIn(function(){
+								$.mobile.loading('hide');
+							
+						});
+						
+									$("#uhs").slideDown(600);
+					$("#uhs").fadeIn(2000);
+			
+						$("#toggle").fadeIn(function(){
+													
+						});
+     }
+
+ </script>
+
+    
+
+	
+  </head>
+
+  <body>
+
+ <div data-role="page" id="map-page"> 
+ 	<div data-role="header" data-theme="a" data-position="fixed">
+	<a ></a>
+  <div align="center">
+	  <img src="img/gcosws.png" height="8%" width="70%">
+      </div>
+     <a href="index.html"  data-ajax="false" data-direction="reverse" data-iconpos="notext" data-role="button" data-icon="home" data-theme="b" title="Home">Home</a>
+  </div>
+  <br />
+  <div>
+  <div   id="vmg" " class="ui-body"  style="background: #268f3a;  border-radius: 6px;  display:none;">
+  <div align="center" style="color: white; background: #226f42;  border-radius: 6px;">
+<div align="center" style="color: white;"><img src="img/v.png"/ width="15%"> <img src="img/m.png"/ width="15%"> <img src="img/g.png"/ width="15%"> <br/>
+<img src="img/vmg.png"/ width="100%">
+</div>
+</div>
+    </div>
+	
+	<br/>
+	
+	  <div id="uhs" class="ui-body"  style="background: #268f3a;  border-radius: 6px; display:none; ">
+<div align="center" style="color: white; background: #226f42;  border-radius: 6px;">
+<img src="img/nearby.png"/ width="20%"> <img src="img/quake.png"/ width="20%"> <img src="img/weather.png"/ width="20%">  <br/>
+<img src="img/uhs.png"/ width="100%">
+</div>
+    </div>
+</div>
+<br />
+
+
+
+	  <div id="procedures" class="ui-body"  style="background: #268f3a;  border-radius: 6px;  ">
+<div align="center" style="color: white; background: #226f42;  border-radius: 6px;">
+<img src="img/procedures.png"/ width="100%">
+
+</div>
+    </div>
+	    </div>
+ </body>
+</html>
