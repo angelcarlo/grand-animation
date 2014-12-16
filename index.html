@@ -42,19 +42,7 @@
 		#ex2 img:active { cursor: url(grabbed.cur), default; }
 	</style>
 
-	<script>
-	
-  $(document).ready(function(){
-$('#animateoffices').click(function(){
-						$.mobile.loading('show');
-						$("#animateoffices1").slideDown(3000);
-						$("#animateoffices1").fadeIn(function(){
-						$.mobile.loading('hide');
-						});
-});   
 
-  }); 
-	</script>
 	
 
   <script>
@@ -110,7 +98,7 @@ var password = document.getElementById('password').value;
 
    $(document).ready(function(){ 
    $.mobile.loading('show');
-	$("#banner").slideDown(1000);
+	$("#banner").slideDown(2000);
 	$("#banner").fadeIn(function(){
 						
 														$.mobile.loading('hide');
@@ -551,7 +539,7 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
 					<ul >
 			
 					<li  >
-						<a href="#offices"  id="animateoffices" style="background: rgb(48,201,56); /* Old browsers */
+						<a href="units.html"  data-ajax="false" id="animateoffices" style="background: rgb(48,201,56); /* Old browsers */
 background: -moz-linear-gradient(-45deg,  rgba(48,201,56,1) 0%, rgba(40,168,46,1) 50%, rgba(34,145,47,1) 51%, rgba(23,96,26,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(48,201,56,1)), color-stop(50%,rgba(40,168,46,1)), color-stop(51%,rgba(34,145,47,1)), color-stop(100%,rgba(23,96,26,1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(-45deg,  rgba(48,201,56,1) 0%,rgba(40,168,46,1) 50%,rgba(34,145,47,1) 51%,rgba(23,96,26,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -563,7 +551,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 " align="center"><img src="img/nearby.png" width="57%"  height="11%"/></a>
 					</li>
 					<li >
-						<a href="#studentmanual"  id="animatestudentmanual" style=" 	background: rgb(48,201,56); /* Old browsers */
+						<a href="handbook.html" data-ajax="false"  id="animatestudentmanual" style=" 	background: rgb(48,201,56); /* Old browsers */
 background: -moz-linear-gradient(-45deg,  rgba(48,201,56,1) 0%, rgba(40,168,46,1) 50%, rgba(34,145,47,1) 51%, rgba(23,96,26,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(48,201,56,1)), color-stop(50%,rgba(40,168,46,1)), color-stop(51%,rgba(34,145,47,1)), color-stop(100%,rgba(23,96,26,1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(-45deg,  rgba(48,201,56,1) 0%,rgba(40,168,46,1) 50%,rgba(34,145,47,1) 51%,rgba(23,96,26,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -577,7 +565,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 " align="center"><img src="img/quake.png" width="57%"  height="11%"/></a>
 					</li>
 					<li >
-						<a href="#survivalkit" id="animatesurvival"   style="background: rgb(48,201,56); /* Old browsers */
+						<a href="survival.html" data-ajax="false" id="animatesurvival"   style="background: rgb(48,201,56); /* Old browsers */
 background: -moz-linear-gradient(-45deg,  rgba(48,201,56,1) 0%, rgba(40,168,46,1) 50%, rgba(34,145,47,1) 51%, rgba(23,96,26,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(48,201,56,1)), color-stop(50%,rgba(40,168,46,1)), color-stop(51%,rgba(34,145,47,1)), color-stop(100%,rgba(23,96,26,1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(-45deg,  rgba(48,201,56,1) 0%,rgba(40,168,46,1) 50%,rgba(34,145,47,1) 51%,rgba(23,96,26,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -630,7 +618,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
   
   
   
-  <!--OFFICES -->
+  <!--OFFICES
 <div data-role="page" id="offices">
 <div data-role="header" data-position="fixed">
    <a href=""  data-role="button" ></a>
@@ -643,7 +631,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 
 <div data-role="content" role="main"   style="background: #b4efcb;  border-radius: 8px; margin:5%; ">
 		
-		<div  style="background: #4bb774;  border-radius: 6px; ">
+		<div  style="background: #4bb774;  border-radius: 6px;">
 		<div  id="img3" align="center" style="color: white; "> <img src="img/nearby.png" align="center" width="40%"  height="20%"/></div>
 		<div style="color: white; font-weight:800; "  align="center"><p>"THE RISE OF THE CREATIVE MINDS"</p> </div>
 		</div>
@@ -712,8 +700,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 
 </div>	
 </div>
-  
-    <!--STUDENT MANUAL -->
+   -->
+    <!--STUDENT MANUAL 
 <div data-role="page" id="studentmanual">
 <div data-role="header" data-position="fixed" >
    <a ></a>
@@ -741,15 +729,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 <a href="#wearinguniform" data-role="button"  data-icon="flat-menu" data-theme="b" style="background: #005325">WEARING OF UNIFORM</a>
 </div>
 
-<div>
 
-
-
-</div>
 </div>	
 
 
-    <!-- wearing uniform -->
+ 
 <div data-role="page" id="wearinguniform">
 <div data-role="header" data-position="fixed" >
         <a href=""  data-role="button" ></a>
@@ -776,7 +760,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 
 
 
-      <!-- male -->
+   
 <div data-role="page" id="male">
 <div data-role="header" data-position="fixed">
       <a href=""  data-role="button" ></a>
@@ -798,7 +782,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 </div>	
 </div>
 
-      <!-- femlae -->
+    
 <div data-role="page" id="female">
 <div data-role="header" data-position="fixed">
       <a href="#"  data-role="button" ></a>
@@ -818,9 +802,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 </div>	
 </div>
 </div>
+-->
 
   
-<!--SURVIVAL KIT -->
+<!--SURVIVAL KIT 
 <div data-role="page" id="survivalkit">
 <div data-role="header" data-position="fixed">
       <a href="#" ></a>
@@ -859,7 +844,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30c938', end
 </div>	
 </div>
 </div>
-
+-->
 
       <!-- tips 
 <div data-role="page" id="tips">
