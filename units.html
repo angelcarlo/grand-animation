@@ -12,7 +12,8 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
-  
+  	<script src='js/jquery.zoom.js'></script>
+		<script src='js/jquery.zoom.min.js'></script>
   <script>
 window.onload = popup;
 
@@ -74,7 +75,26 @@ function popup(){
 }
 
   </script>
-
+<script>
+		$(document).ready(function(){
+			$('#ex1').zoom();
+			$('#ex2').zoom({ on:'grab' });
+			$('#ex3').zoom({ on:'click' });		
+$('#ex5').zoom({ on:'click' });
+$('#ex6').zoom({ on:'click' });	
+$('#ex7').zoom({ on:'click' });	
+$('#ex8').zoom({ on:'click' });	
+$('#ex9').zoom({ on:'click' });		
+$('#ex10').zoom({ on:'click' });	
+$('#ex11').zoom({ on:'click' });					
+			$('#ex4').zoom({ on:'toggle' });
+		});
+		
+		
+		
+		
+		
+	</script>
   <script>   
   $(document).ready(function(){
   
